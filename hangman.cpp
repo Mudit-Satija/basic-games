@@ -117,7 +117,7 @@ int main() {
 
         // Check if letter was already guessed
         if (find(guessedLetters.begin(), guessedLetters.end(), guess) != guessedLetters.end()) {
-            cout << "⚠️ You already guessed that letter. Try another one.\n";
+            cout << " You already guessed that letter. Try another one.\n";
             continue;
         }
 
@@ -134,18 +134,18 @@ int main() {
 
         if (!found) {
             lives--;
-            cout << "❌ Wrong guess!\n";
+            cout << " Wrong guess!\n";
         } else {
-            cout << "✅ Good job! Letter found.\n";
+            cout << "Good job! Letter found.\n";
         }
     }
 
     // Final Result
     if (guessedWord == word) {
-        cout << "\n🎉 Congratulations! You guessed the word: " << word << "\n";
+        cout << "\nCongratulations! You guessed the word: " << word << "\n";
     } else {
         displayHangman(0);
-        cout << "\n💀 Game Over! The correct word was: " << word << "\n";
+        cout << "\nGame Over! The correct word was: " << word << "\n";
     }
 
     return 0;
