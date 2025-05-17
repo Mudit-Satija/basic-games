@@ -75,7 +75,7 @@ int main() {
 
         if (checkWin()) {
             displayBoard();
-            cout << "Player " << currentPlayer << " wins! 🎉\n";
+            cout << "Player " << currentPlayer << " wins! \n";
             return 0;  // End the game
         }
 
@@ -83,7 +83,7 @@ int main() {
     }
 
     displayBoard();
-    cout << "It's a draw! 🤝\n";
+    cout << "It's a draw! \n";
     return 0;
 }
      
